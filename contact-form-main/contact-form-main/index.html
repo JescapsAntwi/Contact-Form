@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<!--<link rel="stylesheet" href="styles.css">-->
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#contact {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.name-container {
+    display: flex;
+    gap: 20px; /* Adjust the gap as needed */
+}
+
+.name-field {
+    flex: 1; /* Ensures both fields take up equal space */
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    html, body {
+    height: 100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="contact">Contact Us</h1>
+    <form>
+
+      <div class="name-container">
+        <div class="name-field">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="FirstName" required>
+        </div>
+        <div class="name-field">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="LastName" required>
+        </div>
+    </div>
+
+      <label for="email">Email Address</label>
+      <input type="text" id="email" name="EmailAddress" required>
+
+      <div class="query-container">
+        <div class="query-field">
+          <label for="qtype">Query Type</label>
+        <select id="qtype" name="QueryType">
+          <option value="GeneralEnquiry">GeneralEnquiry</option>
+          <option value="SupportRequest">Support Request</option>
+        </select>
+        </div>
+</div>
+
+
+      <!--<input type="text" id ="type1" placeholder="General Enquiry" required>
+      <input type="text" id ="type2" placeholder="Support Request" required>-->
+
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" style="height: 200px"></textarea>
+
+      <input type="checkbox" id="consent" value="checkbox">
+      <label for="consent">I consent to being contacted by the team</label>
+<br>
+<br>
+      <input type="submit" value="Submit">
+
+    </form>
+  </div>
+
+  <!--<div class="hero"><header>  Contact Us</header></div>
+
+
+<div class= "firstname"><h6> First Name</h6></div>
+<input placeholder="This field is required " type="text">
+  First Name
+  This field is required
+<div class="lastname"><h6>Last Name</h6></div>
+<input placeholder="This field is required" type="text">
+
+<div class="email"><h6>Email Address</h6></div>
+<input placeholder="This field is required" type="text">
+
+<div class="query"><h6>Query Type</h6></div>
+<div class="option1"><input placeholder="Please select a query type" type="checkbox"></div>
+<div class="option1"><input placeholder="Please select a query type" type="checkbox"></div>
+
+
+<div class="message">
+  <div class="input"><h6>Message</h6></div>
+  <input placeholder="Message Sent!
+  Thanks for completing the form. We'll be in touch soon!" type="text"></div>
+
+<footer><div><input type="checkbox" placeholder=" I consent to being contacted by the team"</div></footer>
+
+
+<div class="submit"><button>Submit</button></div>-->
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+  Submit
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon!
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Jescaps Nyarko Antwi</a>.
+  </div>
+</body>
+</html>
